@@ -1,35 +1,24 @@
 <html>
-  <head>
-    <title>Mastermind</title>
-    <script language='JavaScript' src='assignment1.js'></script>
-  </head>
-<script Language=JavaScript>
-			    			createAns();
-</script>
-  <body bgcolor="white" onload="init()">
+	<head>
+    	<title>Mastermind</title>
+    	<script language='JavaScript' src='assignment1.js'></script>
+  	</head>
+	<script Language=JavaScript>createAns();</script>
+  	<body bgcolor="white" onload="init()">
 
     <table width=400 height=520 border=1>
 		<tr><td valign='top' align='center' colspan=7>Welcome to Mastermind</td></tr>
 			<tr><td colspan=7>
-				<table width=400 height=450 border=0 id='board'>
-					<tr><td>test 1 </td></tr>
-					<tr><td>
-						<script Language=JavaScript>
-			    			document.write(displayAns());
-			  			</script>
-					</td></tr>
+				<table width=400 height=450 border=1 id='board'>
+					<script Language=JavaScript>makeBoard();</script>
 				</table>
 			</td></tr>
 			<tr><td align='center' colspan=6>Click your color then where to place it</td></tr>
 			<tr>
-				<script Language=JavaScript>
-			    	document.write(displayPegs());
-			  	</script>
+				<script Language=JavaScript>displayPegs();</script>
 			  	<td><a href='javascript:submitGuess()'>Submit</a></td>
 			  	
 			</tr>
     </table>
   </body>
 </html>
-			<!-- <tr><td></td></tr> -->
-			<!-- style="background-color:red"-->
