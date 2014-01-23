@@ -30,7 +30,16 @@ function submitGuess(){
     */
 }
 function createAns(){
-	for(color in pegs){
-		ans[color] = getRandom(numColors);
+	for(var i=0;i<pegs.length;i++){
+		ans[i] = Math.floor( pegs.length * Math.random() );
 	}
+}
+function displayAns(){
+	var retVal = ""
+	for(color in ans){
+		retVal += "<td align='center'>";
+		retVal += "<img src=" + pegs[ans[color]] + " >";
+		retVal += "</td>";
+	}
+	return retVal;
 }
