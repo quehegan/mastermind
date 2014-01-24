@@ -57,6 +57,10 @@ function submitGuess(){
 		alert("You Win \n Press Ok to play again");
 		location.reload(); 
 	}
+	if(curGuess == 11){
+		alert("You Lost \n Press Ok to play again");
+		location.reload(); 
+	}
 	for(var i=1;i<=correct;i++){
 		var id = i+"R"+curGuess;
 		document.getElementById(id).innerHTML = "<img src=redbox.gif border=0/>";
